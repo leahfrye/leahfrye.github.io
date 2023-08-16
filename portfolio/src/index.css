@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+
+body {
+  margin: 0;
+  font-family: Open Sans,sans-serif;
+  font-size: 1.1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgba(0,0,0,.8);
+}
+
+h1 {
+  font-family: 'Kelly Slab', cursive;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: .5rem;
+}
+
+.container {
+  max-width: 960px !important;
+}
+
+.knowledge ul {
+  list-style-type: none;
+  font-weight: 300;
+  font-size: 20px;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.knowledge ul li {
+  margin-bottom: 10px;
+}
+
+.header {
+  background-repeat: repeat;
+  background-size: 2000px 500px;
+  padding-top: 3.5rem; 
+  margin-bottom: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.header h1 {
+  margin-top: 0px;
+}
+
+
+.section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.section h1, .header h1 {
+  font-size: 38px !important;
+}
+
+.section h2, .section h3 {
+  font-weight: 300;
+  margin-top: 1.5rem ;
+}
+
+.section h2 {
+  font-size: 28px;
+}
+
+.section h3 {
+  font-size: 22px
+}
+
+.section button {
+  line-height: 1rem;
+}
+
+.section button i {
+  position: relative;
+  top: 1px
+}
+
+
+.d-flex button, .section button {
+  margin-right: 20px;
+  background-color: transparent;
+  border: 2px solid #424649;
+  color: black;
+}
+
+.d-flex button:hover, .section button:hover {
+  margin-right: 20px;
+  background-color: transparent;
+  border: 2px dashed #424649;
+  color: black;
+}
+
+.d-flex button img {
+  width: 20px;
+  margin-top: -3px;
+  margin-right: 5px;
+}
+
+.hr {
+  background-repeat: repeat;
+  height: .3rem;
+  box-shadow: 4px 4px 4px #e8e8e8;
+}
+
+.projects .container {
+  background-color: #f1f3f3;
+  padding: 2px 20px 25px 25px;
+  margin-bottom: 20px;
+  border: 1px dashed #d6d6c2;
+  border-radius: 2px;
+}
+
+.gallery {
+  margin-bottom: 1rem;
+}
+
+.gallery a {
+  cursor: pointer;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.gallery a .thumbail {
+  width: 160px;
+  height: 125px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 150px;
+  border-radius: 2px;
+  background-image: url('http://localhost/screenshots/mp_user_dashboard.png');
+}
+
+.gallery a:hover .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .2;
+}
