@@ -1,5 +1,31 @@
 import { useState } from "react";
 
+import Gallery from "./gallery";
+
+const mpImages = [
+  "screenshots/mp_user_dashboard.png", 
+  "screenshots/mp_import.png", 
+  "screenshots/mp_project_settings.png", 
+  "screenshots/mp_project_view.png"
+];
+
+const fastImages = [
+  "screenshots/fast_main.png",
+  "screenshots/fast_process.png",
+  "screenshots/fast_process_complete.png",
+  "screenshots/fast_checklist"
+];
+
+const caseStudyImages = [
+  "screenshots/case_study_dashboard.png",
+  "screenshots/case_study_sharing.png",
+  "screenshots/case_study_case_view.png",
+  "screenshots/case_study_text_editor.png",
+  "screenshots/case_study_text_questions.png",
+  "screenshots/case_study_text_questions.png",
+  "screenshots/case_study_manage_users.png"
+];
+
 function App() {
 
   const [selectedProject, setSelectedProject] = useState("");
@@ -154,30 +180,9 @@ function App() {
             It also includes a user dashboard for saving, sharing, and collaborating in real-time with other users.
           </p>
           <p><b>Built with: </b>TypeScript, React, Redux, Node, Express, Sequelize, MySQL, Docker, OpenID, Gitlab API</p>
-          <div className="row">
-            <div className="gallery" style={{display: selectedProject === "mp" ? "block" : "none"}}>
-              <a href="screenshots/mp_user_dashboard.png" className="thumbnail">
-                <div className="thumbail" style={{backgroundImage: "url('screenshots/mp_user_dashboard.png')"}}>
-                  <div className="overlay"/>
-                </div>
-              </a>
-              <a href="screenshots/mp_import.png" className="thumbnail">
-                <div className="thumbail" style={{backgroundImage: "url('screenshots/mp_import.png')"}}>
-                  <div className="overlay"/>
-                </div>
-              </a>
-              <a href="screenshots/mp_project_settings.png" className="thumbnail">
-                <div className="thumbail" style={{backgroundImage: "url('screenshots/mp_project_settings.png')"}}>
-                  <div className="overlay"/>
-                </div>
-              </a>
-              <a href="screenshots/mp_project_view.png" className="thumbnail">
-                <div className="thumbail" style={{backgroundImage: "url('screenshots/mp_project_view.png')"}}>
-                  <div className="overlay"/>
-                </div>
-              </a>
-            </div>
-          </div>
+          
+          <Gallery images={mpImages} isVisible={selectedProject === "mp"}/>
+          
           <button type="button" className="btn btn-dark" onClick={() => handleSetSelectedProject("mp")}>
             <span>Screenshots</span> <i className={`bi ${selectedProject === "mp" ? "bi-caret-up" : "bi-caret-right"}`}/>
           </button>
@@ -189,30 +194,9 @@ function App() {
             The FAST application guides Marine administrative clerks through dynamic questions that output a PDF checklist of administrative tasks. Users can save sessions to review later, change answers and download updated PDF checklists.
           </p>
           <p><b>Built with: </b>TypeScript, React, Redux, Styled Components, Node, Express, Sequelize, Postgres, Puppeteer, Docker</p>
-          <div className="row">
-          <div className="gallery" style={{display: selectedProject === "fast" ? "block" : "none"}}>
-            <a href="screenshots/fast_main.png" className="thumbnail">
-              <div className="thumbail" style={{backgroundImage: `url("screenshots/fast_main.png")`}}>
-                <div className="overlay"/>
-              </div>
-            </a>
-            <a href="screenshots/fast_process.png" className="thumbnail">
-              <div className="thumbail" style={{backgroundImage: `url("screenshots/fast_process.png")`}}>
-                <div className="overlay"/>
-              </div>
-            </a>
-            <a href="screenshots/fast_process_complete.png" className="thumbnail">
-              <div className="thumbail" style={{backgroundImage: `url("screenshots/fast_process_complete.png")`}}>
-                <div className="overlay"/>
-              </div>
-            </a>
-            <a href="screenshots/fast_checklist.png" className="thumbnail">
-              <div className="thumbail" style={{backgroundImage: `url("screenshots/fast_checklist.png")`}}>
-                <div className="overlay"/>
-              </div>
-            </a>
-          </div>
-          </div>
+          
+          <Gallery images={fastImages} isVisible={selectedProject === "fast"}/>
+
           <button className="btn btn-dark" onClick={() => handleSetSelectedProject("fast")}>
             Screenshots <i className={`bi ${selectedProject === "fast" ? "bi-caret-up" : "bi-caret-right"}`}/>
           </button>
@@ -236,41 +220,7 @@ function App() {
           </p>
           <p><b>Built with: </b> TypeScript, React, Node, Express, Sequelize, MySQL, Docker</p>
 
-          
-          <div className="row">
-            <div className="gallery" style={{display: selectedProject === "case_study" ? "block" : "none"}}>
-              <a href="screenshots/case_study_dashboard.png" className="thumbnail">
-                <div className="thumbail" style={{backgroundImage: "url('screenshots/case_study_dashboard.png')"}}>
-                  <div className="overlay"/>
-                </div>
-              </a>
-              <a href="screenshots/case_study_sharing.png" className="thumbnail">
-                <div className="thumbail" style={{backgroundImage: "url('screenshots/case_study_sharing.png')"}}>
-                  <div className="overlay"/>
-                </div>
-              </a>
-              <a href="screenshots/case_study_case_view.png" className="thumbnail">
-                <div className="thumbail" style={{backgroundImage: "url('screenshots/case_study_case_view.png')"}}>
-                  <div className="overlay"/>
-                </div>
-              </a>
-              <a href="screenshots/case_study_text_editor.png" className="thumbnail">
-                <div className="thumbail" style={{backgroundImage: "url('screenshots/case_study_text_editor.png')"}}>
-                  <div className="overlay"/>
-                </div>
-              </a>
-              <a href="screenshots/case_study_text_questions.png" className="thumbnail">
-                <div className="thumbail" style={{backgroundImage: "url('screenshots/case_study_text_questions.png')"}}>
-                  <div className="overlay"/>
-                </div>
-              </a>
-              <a href="screenshots/case_study_manage_users.png" className="thumbnail">
-                <div className="thumbail" style={{backgroundImage: "url('screenshots/case_study_manage_users.png')"}}>
-                  <div className="overlay"/>
-                </div>
-              </a>
-            </div>
-          </div>
+          <Gallery images={caseStudyImages} isVisible={selectedProject === "case_study"}/>
 
           <button className="btn btn-dark" onClick={() => handleSetSelectedProject("case_study")}>
             Screenshots <i className={`bi ${selectedProject === "case_study" ? "bi-caret-up" : "bi-caret-right"}`}/>
