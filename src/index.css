@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+
+body {
+  margin: 0;
+  font-family: Open Sans,sans-serif;
+  font-size: 1.1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgba(0,0,0,.8);
+}
+
+h1 {
+  font-family: 'Kelly Slab', cursive;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: .5rem;
+}
+
+.small-text {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 960px !important;
+}
+
+.knowledge {
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.knowledge b {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.header {
+  background-repeat: repeat;
+  background-size: 2000px 500px;
+  padding-top: 3.5rem; 
+  margin-bottom: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.header h1 {
+  margin-top: 0px;
+}
+
+.section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border-radius: 18px;
+}
+
+.section h1, .header h1 {
+  font-size: 38px !important;
+}
+
+.section h2, .section h3 {
+  font-weight: 300;
+  margin-top: 1.5rem ;
+}
+
+.section h2 {
+  font-size: 28px;
+}
+
+.section h3 {
+  font-size: 22px
+}
+
+.section button {
+  line-height: 1rem;
+}
+
+.section button i {
+  position: relative;
+  top: 1px
+}
+
+
+.d-flex button, .section button {
+  margin-right: 20px;
+  background-color: transparent;
+  border: 2px solid #424649;
+  color: black;
+}
+
+.d-flex button:hover, .section button:hover {
+  margin-right: 20px;
+  background-color: transparent;
+  border: 2px dashed #424649;
+  color: black;
+}
+
+.d-flex button img {
+  width: 20px;
+  margin-top: -3px;
+  margin-right: 5px;
+}
+
+.hr {
+  background-repeat: repeat;
+  height: .3rem;
+  box-shadow: 4px 4px 4px #e8e8e8;
+}
+
+.projects .container {
+  background-color: #f1f3f3;
+  padding: 2px 20px 25px 25px;
+  margin-bottom: 20px;
+  border: 1px dashed #d6d6c2;
+  border-radius: 2px;
+}
+
+.gallery {
+  margin-bottom: 1rem;
+}
+
+.gallery .thumbnail {
+  cursor: pointer;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  width: 160px;
+  height: 125px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 150px;
+  border-radius: 2px;
+  background-image: url('http://localhost/screenshots/mp_user_dashboard.png');
+}
+
+.gallery .thumbnail:hover .thumbnail-overlay {
+  background-color: #000;
+  opacity: .2;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: .3;
+}
+
+.popup {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content-container {
+  width: 90%;
+  height: 90%;
+  max-width: 1200px;
+  max-height: 800px;
+  background-color: #191919;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  border-radius: 5px;
+}
+
+.popup-content {
+  padding: 2%;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popup-content .img-container {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content .img-container img {
+  max-width: 100%;
+  max-height: 100%;
+  user-select: none;
+}
+
+.control {
+  cursor: pointer;
+  color: #f9aca2;
+}
+
+.control:hover i, .control:active i {
+  opacity: .7;
+}
+
+.control.prev, .control.next {
+  width: 5%;
+  height: 5%;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-table;
+  font-size: 3rem;
+}
+
+.control.prev {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.control.next {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.control.close {
+  font-size: 2rem;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 5px;
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hidden i {
+  opacity: 0;
+}
+
+.popup-close i {
+  font-size: 3rem;
+}
