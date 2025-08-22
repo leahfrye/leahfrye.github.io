@@ -27,20 +27,26 @@ ul li {
   margin-bottom: .5rem;
 }
 
+.small-text {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
 .container {
   max-width: 960px !important;
 }
 
-.knowledge ul {
-  list-style-type: none;
+.knowledge {
   font-weight: 300;
-  font-size: 20px;
-  padding-left: 0px;
-  margin: 0px;
+  font-size: 18px;
+  margin-top: 25px;
 }
 
-.knowledge ul li {
-  margin-bottom: 10px;
+.knowledge b {
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .header {
@@ -55,10 +61,10 @@ ul li {
   margin-top: 0px;
 }
 
-
 .section {
   margin-top: 3rem;
   margin-bottom: 3rem;
+  border-radius: 18px;
 }
 
 .section h1, .header h1 {

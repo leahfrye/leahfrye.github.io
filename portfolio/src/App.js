@@ -40,10 +40,10 @@ function App() {
         <div className="container">
           <h1>Leah Frye</h1>
           <br/>
-          <p><b>Full stack web developer</b> with 7 years of professional experience developing frontend React applications, 4 years developing Node backends, and a passion for solving unique problems.</p>
+          <p><b>Full stack web developer</b> with 5+ years of professional experience building and deploying scalable web applications with modern JavaScript frameworks. Skilled in the full application lifecycle: design, development, testing, deployment, support, and a passion for solving unique problems.</p>
           <br/>
           <div className="d-flex">
-            <a href="https://docs.google.com/document/d/1te8PdYs1pIMSeIUIvb9B-mgmqgW2UHk4I6w0y3Ko4YY/edit?usp=sharing" target="_blank" rel="noreferrer">
+            <a href="/resumeLeahFrye.pdf" target="_blank" rel="noreferrer">
               <button type="button" className="btn btn-dark">
               <i className="bi bi-file-earmark-text"/> Resume
               </button>
@@ -64,55 +64,15 @@ function App() {
 
         <div className="section">
           <h1>Knowledge</h1>
-          <div className="row knowledge">
-            <div className="col">
-              <ul>
-                <li>JavaScript/TypeScript</li>
-                <li>React</li>
-                <li>Redux</li>
-                <li>JQuery</li>
-                <li>Node.js</li>
-              </ul>
-            </div>
-            <div className="col">
-              <ul>
-                <li>Express.js</li>
-                <li>Sequelize</li>
-                <li>MySQL</li>
-                <li>Socket.IO</li>
-                <li>Passport.js</li>
-              </ul>
-            </div>
-            <div className="col">
-              <ul>
-                <li>Docker</li>
-                <li>Git</li>
-                <li>Linux</li>
-                <li>Traefik</li>
-                <li>SSH, HTTPS</li>
-              </ul>
-            </div>
-            <div className="col">
-              <ul>
-                <li>Gitlab Runner + CI/CD</li>
-                <li>Auth (SAML, LTI, basic)</li>
-                <li>Photoshop, Illustrator</li>
-              </ul>
-            </div>
+          <div className="knowledge">
+              <p><b>Languages/Frameworks: </b> <br/> HTML, CSS/SCSS, JavaScript, TypeScript, React, JQuery, Node.js, Python</p>
+              <p><b>Backend & Security: </b> <br/> API development, MySQL, SQLite, Sequelize ORM, Passport.js, SharePoint, Auth (SAML, LTI, basic), PII handling, role-based access control (RBAC)</p>
+              <p><b>DevOps and Deployment: </b> <br/>Docker, Traefik, Gitlab CI/CD, Linux server management, AWS EC2/S3</p>
+              <p><b>AI and Automation Tools: </b> <br/>Grok and Gemini APIs, Microsoft PowerApps and Power Automate</p>
+              <p><b>Development Practices: </b> <br/>Test-driven development, debugging, troubleshooting, responsive design, cross-browser compatibility</p>
+              <p><b>Design & UX Tools: </b> <br/>Adobe Photoshop, Illustrator, Premiere, wireframing, graphics for web</p>
+              <p><b>Additional Skills: </b> <br/>Documentation (wikis, video tutorials), Agile workflow, project management, client communication & support</p>
           </div>
-
-          <h2>Misc</h2>
-          <ul>
-            <li>Responsive and mobile-first design</li>
-            <li>Browser compatibility</li>
-            <li>Test-driven development</li>
-            <li>Creating mockups, wireframes and color schemes</li>
-            <li>Managing and deploying to remote servers</li>
-            <li>Installing and managing SSL certificates</li>
-            <li>Managing user sessions</li>
-            <li>Creating documentation and tutorials</li>
-            <li>Agile development</li>
-          </ul>
         </div>
 
         <div className="hr" style={{backgroundImage: `url("gradient.jpg")`}}/>
@@ -120,49 +80,46 @@ function App() {
         <div className="section">
           <h1>Work Experience</h1>
 
-          <h2><b>Web Developer</b>, MKS2 LLC</h2>
-          <p>Remote | June 2018 – July 2023 | NEC at the Naval Postgraduate School</p>
+          <h2><b>Information Technology Specialist</b>, Naval Postgraduate School, Department of the Navy</h2>
+          <p>Remote | April 2024 – May 2025</p>
           <ul>
-            <li>Communicate with the team daily using Microsoft Teams, Zoom, and email</li> 
-            <li>Collaborate with developers using Jira, Trello, and other project-management tools</li>
-            <li>Manage projects, meet with clients, attend intake meetings and estimate project requirements</li>
-            <li>Manage servers, work with IT department to fix security vulnerabilities and ensure applications remain up-to-date with security standards</li>
-            <li>Use Adobe Photoshop and Illustrator to create application mockups, icons and graphics</li>
-            <li>Develop and maintain backends using NodeJS</li>
-            <li>Create and manage databases using MySQL and Sequelize ORM</li>
-            <li>Write APIs, manage user sessions and securely store encrypted credentials</li>
-            <li>Develop interactive course modules, maps, and graphs</li>
-            <li>Create real-time collaborative tools using Socket.IO</li>
-            <li>Write documentation and create video tutorials for users and developers</li>
-            <li>Develop themes, manage content, and customize plugins for WordPress</li>
-            <li>Create Docker images and containers using Dockerfiles and docker-compose</li>
-            <li>Setup and maintain Traefik load balancers</li>
-            <li>Set up automatic testing via Gitlab CI/CD</li>
-            <li>Use SAML, OpenID, LTI, and basic logins for user account authorization</li>
+            <li>Developed campus-wide business applications using Microsoft Power Platform (PowerApps, Power Automate)</li> 
+            <li>Automated and modernized outdated department workflows and web processes</li>
+            <li>Created branded, accessible low-code applications aligned with organizational standards</li>
+            <li>Optimized and repaired existing workflows; created automation to resolve data integrity issues</li>
+            <li>Managed SharePoint data sources and configured access roles in compliance with Least Privilege</li>
+            <li>Documented workflows with visual diagrams, tested apps across user roles to ensure proper access</li>
+            <li>Collaborated with clients in an Agile workflow to gather requirements and deliver end-to-end solutions</li>
           </ul>
 
-          <h2><b>Web Developer</b>, General Dynamics Information Technology</h2>
-          <p>Monterey, CA | October 2016 – April 2018 | CED3 at the Naval Postgraduate School</p>
+          <h2><b>Web Developer</b>, MKS2 LLC</h2>
+          <p>
+            Remote | October 2016 – April 2024 | NEC at the Naval Postgraduate School<br/>
+            <span className="small-text">* Progressed from front-end to full-stack development over 9 years</span>
+          </p>
+          
           <ul>
-            <li>Created applications using JavaScript, NodeJs, React, Redux, WordPress, HTML, CSS, and other web development tools</li>
-            <li>Supported existing applications, wrote tests, and debugged code</li>
-            <li>Pushed updates to Linux servers and used Docker to manage apps, performed troubleshooting on servers when needed</li>
-            <li>Created functional products from graphical prototypes provided by the UI designer</li>
-            <li>Utilize responsive design and ensure browser compatibility</li>
-            <li>Worked alongside the UI designer to QA/QC web apps and perform fixes</li>
-            <li>Created and updated NPS web pages using Liferay and WordPress CMS</li>
-            <li>Designed and created websites for campus faculty and organizations</li>
+            <li>Developed and maintained full stack applications using Node.js, MySQL, and Sequelize ORM</li> 
+            <li>Built RESTful APIs, managed user sessions, and securely stored encrypted credentials</li>
+            <li>Created real-time collaborative tools and interactive course modules using WebSockets (Socket.io)</li>
+            <li>Designed UI components, maps, and icons using Adobe Photoshop and Illustrator</li>
+            <li>Managed WordPress content, customized themes, and developed plugins</li>
+            <li>Deployed applications using Docker and Traefik for load balancing and SSL</li>
+            <li>Implemented CI/CD pipelines using GitLab Runner, GitLab CI and GitLab API</li>
+            <li>Configured authentication systems using SAML, OpenID, LTI, and standard login flows</li>
+            <li>Maintained Linux servers, resolved security vulnerabilities, and ensured compliance with IT policies</li>
+            <li>Translated UI mockups into responsive, cross-browser-compatible front ends</li>
+            <li>Updated campus websites via Liferay and WordPress; built custom faculty sites</li>
+            <li>Documented systems, created tutorials, and supported clients directly</li>
           </ul>
 
           <h2><b>Media Assistant</b>, General Dynamics Information Technology</h2>
           <p>Monterey, CA | April 2015 – October 2016 | CED3 at the Naval Postgraduate School</p>
           <ul>
-            <li>Supported faculty and instructional designers with production of course materials and online content</li>
-            <li>Designed and developed interactive web tools for use in training courses using JQuery, HTML and CSS</li>
-            <li>Assisted web developers by using JavaScript, React and Redux to help build web applications </li>
-            <li>Collaborated with lead graphic designer to create and revise graphics</li>
-            <li>Edited and exported audio, video, and other media</li>
-            <li>Created and updated client and faculty webpages</li>
+            <li>Built interactive training tools using jQuery, HTML, and CSS for faculty</li>
+            <li>Assisted developers with front-end features using JavaScript, React, and Redux</li>
+            <li>Edited and produced multimedia content, including graphics, video, and audio</li>
+            <li>Updated and maintained web pages for clients and faculty</li>
           </ul>
         </div>
 
@@ -234,14 +191,6 @@ function App() {
             Users can add shapes, custom SVG icons, change colors, draw lines, and download images/PDFs or JSON map data.
           </p>
           <p><b>Built with: </b>JavaScript, Leaflet</p>
-        </div>
-
-        <div className="container">
-          <h2>Zefra Scenario Website</h2>
-          <p>
-            The <a href="https://drift.nps.edu/wargaming/zefra" target="__blank">Zefra Scenario</a> is a fictional wargaming exercise built to support in-person courses. The website is purely informational with some interactivity. 
-          </p>
-          <p><b>Built with: </b>TypeScript, React</p>
         </div>
 
       </div>
